@@ -21,10 +21,12 @@ public class MenuBenhAn {
                             add();
                             break;
                     case 2:
+                            danhSachBenhAn.witeFile();
                             remove();
                             break;
                     case 3:
                             show();
+                        danhSachBenhAn.readFile();
                             break;
 
                     case 4:
@@ -89,9 +91,7 @@ public class MenuBenhAn {
         }
     public void show(){
         System.out.println("Danh sách bệnh án ");
-        danhSachBenhAn.readFile();
         danhSachBenhAn.showBenhAn();
-        danhSachBenhAn.witeFile();
     }
 
 }
